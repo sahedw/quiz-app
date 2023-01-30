@@ -8,6 +8,10 @@ h1 {
   font-size: 2rem;
 }
 
+main {
+  margin-bottom: 130px;
+}
+
 button {
   padding: 15px 30px 15px 30px;
 }
@@ -43,10 +47,13 @@ button {
   list-style-type: none;
   position: absolute;
   display: flex;
-  gap: 20px;
-  background-color: aliceblue;
+  gap: 15px;
   left: 10px;
   bottom: 10px;
+}
+
+.hashtags-items {
+  background-color: aliceblue;
   padding: 5px 10px;
   border-radius: 5px;
 }
