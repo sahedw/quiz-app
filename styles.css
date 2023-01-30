@@ -8,6 +8,10 @@ h1 {
   font-size: 2rem;
 }
 
+img {
+  width: 40px;
+}
+
 main {
   margin-bottom: 130px;
 }
@@ -39,8 +43,8 @@ button {
 
 .bookmark-question-card {
   position: absolute;
-  top: -5px;
-  right: -8px;
+  top: -8px;
+  right: -15px;
 }
 
 .hashtags {
@@ -61,15 +65,15 @@ button {
 .navbar-div {
   position: fixed;
   bottom: 0;
-  background-color: cadetblue;
+  background-color: bisque;
   height: 80px;
   width: 100%;
 }
 
-.navbar-item-list {
+.navbar-list {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 100%;
+  height: 80px;
 }
