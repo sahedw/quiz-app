@@ -29,6 +29,19 @@ button {
   width: 100%;
 }
 
+.profile-div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.jojo {
+  width: 250px;
+  border-radius: 10px 150px;
+}
+
 .question-card {
   display: flex;
   flex-direction: column;
