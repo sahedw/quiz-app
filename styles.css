@@ -16,3 +16,18 @@ h1 {
   height: 100px;
   width: 100%;
 }
+
+.navbar-div {
+  position: fixed;
+  bottom: 0;
+  background-color: cadetblue;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar-item-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
