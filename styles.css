@@ -8,6 +8,14 @@ h1 {
   font-size: 2rem;
 }
 
+main {
+  margin-bottom: 130px;
+}
+
+button {
+  padding: 15px 30px 15px 30px;
+}
+
 .header-div {
   display: flex;
   justify-content: center;
@@ -15,6 +23,39 @@ h1 {
   background-color: bisque;
   height: 100px;
   width: 100%;
+}
+
+.question-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  height: 400px;
+  background-color: chocolate;
+  gap: 40px;
+  position: relative;
+}
+
+.bookmark-question-card {
+  position: absolute;
+  top: -5px;
+  right: -8px;
+}
+
+.hashtags {
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  left: 10px;
+  bottom: 10px;
+}
+
+.hashtags-items {
+  background-color: aliceblue;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
 .navbar-div {
@@ -30,4 +71,5 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 100%;
 }
