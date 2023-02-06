@@ -1,4 +1,4 @@
-.question-card {
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,13 +10,13 @@
   position: relative;
 }
 
-.bookmark-question-card {
+.card__bookmark {
   position: absolute;
   top: -8px;
   right: -15px;
 }
 
-.hashtags {
+.card__hashtags {
   list-style-type: none;
   position: absolute;
   display: flex;
@@ -25,7 +25,7 @@
   bottom: 10px;
 }
 
-.hashtags-items {
+.card__hashtags__items {
   background-color: aliceblue;
   padding: 5px 10px;
   border-radius: 5px;
