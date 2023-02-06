@@ -22,12 +22,12 @@
   position: relative;
 }
 
-.about__heading {
+.profile__about__heading {
   position: absolute;
   top: -40px;
   left: 445px;
 }
 
-.about__text {
+.profile__about__text {
   width: 450px;
 }
