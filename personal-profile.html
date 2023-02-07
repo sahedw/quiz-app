@@ -8,52 +8,50 @@
     <title>Bookmarked</title>
   </head>
   <body>
-    <header class="quiz-app-header">
-      <section class="header-div">
-        <h1>Quiz App</h1>
-      </section>
+    <header class="header">
+      <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="profile-div">
+      <section class="profile">
         <h2>Eren Jäger</h2>
         <img
-          class="profile-picture"
+          class="profile__picture"
           src="/imgs/profile-picture.png"
           alt="profile-picture"
         />
       </section>
-      <section class="about-me-div">
-        <h2 class="about-me-heading">About Me</h2>
-        <p class="about-me-text">
+      <section class="profile__about">
+        <h2 class="profile__about__heading">About Me</h2>
+        <p class="profile__about__text">
           Lorem, fiqh dolor sit amet consectetur adipisicing elit. Earum fuga
           explicabo doloribus excepturi minus! Impedit ut ipsam tenetur eveniet
           soluta, nam est aut sapiente vitae, labore quisquam, libero ullam!
           Aspernatur?
         </p>
       </section>
-      <section class="counter-div">
-        <div class="counter-content-style">
+      <section class="counter">
+        <div class="counter--style">
           <img
             src="/imgs/questions-counter.png"
             alt="questions-icon"
-            class="counter-icons"
+            class="counter__icons"
           />
           <p>12</p>
         </div>
-        <div class="counter-content-style">
+        <div class="counter--style">
           <img
             src="/imgs/bookmarks-counter.png"
             alt="bookmarks-icon"
-            class="counter-icons"
+            class="counter__icons"
           />
           <p>4</p>
         </div>
       </section>
-      <section class="settings-div">
-        <h2 class="settings-header">Settings</h2>
-        <section class="settings-option">
+      <section class="settings">
+        <h2 class="settings__header">Settings</h2>
+        <section class="settings__option">
           <h4>Dark Mode</h4>
-          <section class="dark-mode-button">
+          <section class="settings__dark-mode-button--off">
             <label class="switch">
               <input type="checkbox" />
               <span class="slider"></span>
@@ -63,26 +61,22 @@
       </section>
     </main>
     <footer class="footer-div">
-      <nav class="navbar-div">
-        <section class="navbar-icons">
-          <ul class="navbar-list">
-            <li>
-              <a class="home-button" href="/index.html"
-                ><img src="/imgs/home.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="/bookmark-tagged.html"
-                ><img src="/imgs/bookmark-footer.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="/personal-profile.html"
-                ><img src="/imgs/user.png" alt=""
-              /></a>
-            </li>
-          </ul>
-        </section>
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li>
+            <a href="/index.html"><img src="/imgs/home.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="/bookmark-tagged.html"
+              ><img src="/imgs/bookmark-footer.png" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="/personal-profile.html"
+              ><img src="/imgs/user.png" alt="picture of the user"
+            /></a>
+          </li>
+        </ul>
       </nav>
     </footer>
   </body>
