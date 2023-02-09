@@ -25,6 +25,10 @@
   right: -12px;
 }
 
+.card__bookmark:hover {
+  cursor: pointer;
+}
+
 /* Ab hier aus dem Internet für den Dark-Mode Switch. Ist nur vorübergehend */
 
 .switch {
