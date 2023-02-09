@@ -5,7 +5,7 @@ const answer = document.querySelector('[data-js="answer-text"]');
 const question = document.querySelector('[data-js="question-text"]');
 
 bookmarkIcon.addEventListener("click", () => {
-  bookmarkIcon.classList.toggle("checked");
+  bookmarkIcon.classList.toggle("card__bookmark--checked");
 });
 
 answerButton.addEventListener("click", () => {
