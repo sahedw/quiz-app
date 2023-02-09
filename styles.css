@@ -10,6 +10,10 @@
 
 /* Eigener Code */
 
+.answer--hidden {
+  display: none;
+}
+
 .checked {
   content: url(/imgs/bookmark-tagged.png);
 }
