@@ -8,7 +8,7 @@
 @import "/components/personal-profile/profile.css";
 @import "/components/personal-profile/settings.css";
 
-/* Eigener Code */
+/* Own code */
 
 .answer--hidden {
   display: none;
@@ -25,7 +25,11 @@
   right: -12px;
 }
 
-/* Ab hier aus dem Internet für den Dark-Mode Switch. Ist nur vorübergehend */
+.card__bookmark:hover {
+  cursor: pointer;
+}
+
+/* Currently just used as a placeholder */
 
 .switch {
   position: relative;
