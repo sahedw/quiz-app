@@ -14,7 +14,7 @@
   display: none;
 }
 
-.checked {
+.card__bookmark--checked {
   content: url(/imgs/bookmark-tagged.png);
 }
 
@@ -23,10 +23,12 @@
   position: absolute;
   top: -8px;
   right: -12px;
+  transition: 0.3s linear;
 }
 
 .card__bookmark:hover {
   cursor: pointer;
+  filter: drop-shadow(3px -1px 5px #000);
 }
 
 /* Currently just used as a placeholder */
