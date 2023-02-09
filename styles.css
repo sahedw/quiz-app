@@ -27,6 +27,7 @@
 
 .card__bookmark:hover {
   cursor: pointer;
+  filter: drop-shadow(3px -1px 5px #000);
 }
 
 /* Currently just used as a placeholder */
