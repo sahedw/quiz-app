@@ -23,5 +23,3 @@ answerButton.addEventListener("click", () => {
     answerButton.textContent = "Hide Answer";
   }
 });
-
-console.log(answer.classList.value === "hidden");
