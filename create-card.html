@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -12,30 +13,32 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="card">
-        <h3>What property flips the axes in flexbox?</h3>
-        <button>Show Answer</button>
-        <ul class="card__hashtags">
-          <li class="card__hashtags__items">#html</li>
-          <li class="card__hashtags__items">#flexbox</li>
-          <li class="card__hashtags__items">#css</li>
-        </ul>
-        <img
-          class="card__bookmark"
-          src="/imgs/bookmark-tagged.png"
-          alt="bookmark"
-        />
-      </section>
+      <form>
+        <legend>Create your own questions!</legend>
+
+        <label for="">Your question:</label>
+        <input type="textarea" />
+
+        <label for="">Your answer:</label>
+        <input type="textarea" />
+
+        <label for="">Tags:</label>
+        <input type="textarea" />
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer class="footer">
       <nav class="navbar">
         <ul class="navbar__list">
           <li>
-            <a href="/index.html"><img src="/imgs/home.png" alt="" /></a>
+            <a href="/index.html"
+              ><img src="/imgs/home.png" alt="Home Button"
+            /></a>
           </li>
           <li>
             <a href="/bookmark-tagged.html"
-              ><img src="/imgs/bookmark-footer.png" alt=""
+              ><img src="/imgs/bookmark-footer.png" alt="Bookmarks Button"
             /></a>
           </li>
           <li>
@@ -45,7 +48,7 @@
           </li>
           <li>
             <a href="/personal-profile.html"
-              ><img src="/imgs/user.png" alt=""
+              ><img src="/imgs/user.png" alt="Profile Button"
             /></a>
           </li>
         </ul>
