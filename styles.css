@@ -10,11 +10,15 @@
 
 /* Eigener Code */
 
-.card__bookmark--checked {
-  width: 70px;
+.checked {
+  content: url(/imgs/bookmark-tagged.png);
+}
+
+.card__bookmark {
+  width: 40px;
   position: absolute;
-  top: -20px;
-  right: -25px;
+  top: -8px;
+  right: -12px;
 }
 
 /* Ab hier aus dem Internet für den Dark-Mode Switch. Ist nur vorübergehend */

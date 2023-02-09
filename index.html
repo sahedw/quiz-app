@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <script src="/index.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -14,31 +15,32 @@
     <main>
       <section class="card">
         <h3>What property flips the axes in flexbox?</h3>
-        <button>Show Answer</button>
+        <button type="button" class="hidden">Show Answer</button>
         <ul class="card__hashtags">
           <li class="card__hashtags__items">#html</li>
           <li class="card__hashtags__items">#flexbox</li>
           <li class="card__hashtags__items">#css</li>
         </ul>
         <img
-          class="card__bookmark--checked"
-          src="/imgs/bookmark-untagged.svg"
+          class="card__bookmark"
+          src="/imgs/bookmark untagged.png"
           alt="bookmark"
-          data-js="bookmark-button"
+          data-js="bookmark-button1"
         />
       </section>
       <section class="card">
         <h3>What property flips the axes in flexbox?</h3>
-        <button>Show Answer</button>
+        <button type="button" class="hidden">Show Answer</button>
         <ul class="card__hashtags">
           <li class="card__hashtags__items">#html</li>
           <li class="card__hashtags__items">#flexbox</li>
           <li class="card__hashtags__items">#css</li>
         </ul>
         <img
-          class="card__bookmark--checked"
-          src="/imgs/bookmark-tagged.svg"
+          class="card__bookmark"
+          src="/imgs/bookmark untagged.png"
           alt="bookmark"
+          data-js="bookmark-button2"
         />
       </section>
     </main>
