@@ -16,4 +16,12 @@ bookmarkButton2.addEventListener("click", () => {
 answerButton.addEventListener("click", () => {
   answer.classList.toggle("hidden");
   question.classList.toggle("hidden");
+
+  if (answer.classList.value === "hidden") {
+    answerButton.textContent = "Show Answer";
+  } else {
+    answerButton.textContent = "Hide Answer";
+  }
 });
+
+console.log(answer.classList.value === "hidden");
