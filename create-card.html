@@ -14,18 +14,42 @@
     </header>
     <main>
       <form>
-        <legend>Create your own questions!</legend>
-
-        <label for="">Your question:</label>
-        <input type="textarea" />
-
-        <label for="">Your answer:</label>
-        <input type="textarea" />
-
-        <label for="">Tags:</label>
-        <input type="textarea" />
-
-        <button type="submit">Submit</button>
+        <label for="">Create your own questions!</label>
+        <section class="form__input">
+          <label for="">Your question:</label>
+          <textarea
+            name="question"
+            id="question"
+            cols="30"
+            rows="5"
+            data-js="question"
+          ></textarea>
+        </section>
+        <section class="form__input">
+          <label for="">Your answer:</label>
+          <textarea
+            name="answer"
+            id="answer"
+            cols="30"
+            rows="5"
+            data-js="answer"
+          ></textarea>
+        </section>
+        <section class="form__input">
+          <label for="">Tags:</label>
+          <textarea
+            name="tags"
+            id="tags"
+            cols="25"
+            rows="2"
+            data-js="tags"
+          ></textarea>
+        </section>
+        <section class="form__input">
+          <button class="button" type="submit" data-js="submit-button">
+            Submit your card
+          </button>
+        </section>
       </form>
     </main>
     <footer class="footer">
