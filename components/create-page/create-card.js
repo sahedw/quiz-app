@@ -13,34 +13,24 @@ const remainingCharactersTags = document.querySelector(
 );
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
-/* The following code is repeating itself and can be shorter through functions. Needs to ask the coaches how in the next session*/
-
 questionInput.addEventListener("input", (event) => {
-  let inputValue = event.target.value;
-  remainingCharactersQuestion.removeAttribute("hidden");
-  let remainingInputCharacters = 150 - inputValue.length;
-  remainingCharactersQuestion.innerHTML = `${remainingInputCharacters} characters remaining`;
-  if (remainingInputCharacters === 0) {
-    remainingCharactersQuestion.style.color = "red";
-  } else remainingCharactersQuestion.style.color = "black";
+  inputCounter(remainingCharactersQuestion, event, 150);
 });
 
 answerInput.addEventListener("input", (event) => {
-  let inputValue = event.target.value;
-  remainingCharactersAnswer.removeAttribute("hidden");
-  let remainingInputCharacters = 150 - inputValue.length;
-  remainingCharactersAnswer.innerHTML = `${remainingInputCharacters} characters remaining`;
-  if (remainingInputCharacters === 0) {
-    remainingCharactersAnswer.style.color = "red";
-  } else remainingCharactersAnswer.style.color = "black";
+  inputCounter(remainingCharactersAnswer, event, 150);
 });
 
 tagsInput.addEventListener("input", (event) => {
-  let inputValue = event.target.value;
-  remainingCharactersTags.removeAttribute("hidden");
-  let remainingInputCharacters = 40 - inputValue.length;
-  remainingCharactersTags.innerHTML = `${remainingInputCharacters} characters remaining`;
-  if (remainingInputCharacters === 0) {
-    remainingCharactersTags.style.color = "red";
-  } else remainingCharactersTags.style.color = "black";
+  inputCounter(remainingCharactersTags, event, 40);
 });
+
+function inputCounter(remainingCharacters, event, limit) {
+  let inputValue = event.target.value;
+  remainingCharacters.removeAttribute("hidden");
+  let remainingInput = limit - inputValue.length;
+  remainingCharacters.innerHTML = `${remainingInput} characters remaining`;
+  if (remainingInput === 0) {
+    remainingCharacters.style.color = "red";
+  } else remainingCharacters.style.color = "black";
+}
