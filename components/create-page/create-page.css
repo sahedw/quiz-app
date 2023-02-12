@@ -18,3 +18,7 @@ form {
   align-self: center;
   width: 170px;
 }
+
+.form__input--remaining {
+  align-self: flex-end;
+}
