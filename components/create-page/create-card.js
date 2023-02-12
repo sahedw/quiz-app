@@ -1,14 +1,44 @@
 const questionInput = document.querySelector('[data-js="question"]');
-const remainingCharacters = document.querySelector(
-  '[data-js="remaining-characters"]'
+const remainingCharactersQuestion = document.querySelector(
+  '[data-js="remaining-characters-question"]'
 );
 const answerInput = document.querySelector('[data-js="answer"]');
+const remainingCharactersAnswer = document.querySelector(
+  '[data-js="remaining-characters-answer"]'
+);
+
+const tagsInput = document.querySelector('[data-js="tags"]');
+const remainingCharactersTags = document.querySelector(
+  '[data-js="remaining-characters-tags"]'
+);
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
 questionInput.addEventListener("input", (event) => {
   let inputValue = event.target.value;
-  remainingCharacters.removeAttribute("hidden");
+  remainingCharactersQuestion.removeAttribute("hidden");
   let remainingInputCharacters = 150 - inputValue.length;
-  remainingCharacters.innerHTML = `${remainingInputCharacters} characters remaining`;
-  console.log(remainingCharacters.innerHTML);
+  remainingCharactersQuestion.innerHTML = `${remainingInputCharacters} characters remaining`;
+  if (remainingInputCharacters === 0) {
+    remainingCharactersQuestion.style.color = "red";
+  } else remainingCharactersQuestion.style.color = "black";
+});
+
+answerInput.addEventListener("input", (event) => {
+  let inputValue = event.target.value;
+  remainingCharactersAnswer.removeAttribute("hidden");
+  let remainingInputCharacters = 150 - inputValue.length;
+  remainingCharactersAnswer.innerHTML = `${remainingInputCharacters} characters remaining`;
+  if (remainingInputCharacters === 0) {
+    remainingCharactersAnswer.style.color = "red";
+  } else remainingCharactersAnswer.style.color = "black";
+});
+
+tagsInput.addEventListener("input", (event) => {
+  let inputValue = event.target.value;
+  remainingCharactersTags.removeAttribute("hidden");
+  let remainingInputCharacters = 40 - inputValue.length;
+  remainingCharactersTags.innerHTML = `${remainingInputCharacters} characters remaining`;
+  if (remainingInputCharacters === 0) {
+    remainingCharactersTags.style.color = "red";
+  } else remainingCharactersTags.style.color = "black";
 });
