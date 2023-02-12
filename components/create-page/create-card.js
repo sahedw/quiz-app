@@ -20,11 +20,6 @@ const submitButton = document.querySelector('[data-js="submit-button"]');
 
 /* Evenlistiners */
 
-submitButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  newCard(questionInput, answerInput, tagsInput);
-});
-
 questionInput.addEventListener("input", (event) => {
   inputCounter(remainingCharactersQuestion, event, 150);
 });
@@ -35,6 +30,11 @@ answerInput.addEventListener("input", (event) => {
 
 tagsInput.addEventListener("input", (event) => {
   inputCounter(remainingCharactersTags, event, 40);
+});
+
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  newCard(questionInput, answerInput, tagsInput);
 });
 
 /* Functions */
