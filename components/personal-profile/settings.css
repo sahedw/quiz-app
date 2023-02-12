@@ -1,16 +1,12 @@
 .settings {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 50px;
-  gap: 30px;
-  position: relative;
+  gap: 10px;
 }
 
-.settings__header {
-  position: absolute;
-  top: -50px;
-  left: 445px;
+.settings-section {
+  display: flex;
+  justify-content: center;
 }
 
 .settings__option {

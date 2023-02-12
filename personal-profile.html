@@ -12,50 +12,56 @@
       <h1>Quiz App</h1>
     </header>
     <main>
-      <section class="profile">
-        <h2>Eren Jäger</h2>
-        <img
-          class="profile__picture"
-          src="/imgs/profile-picture.png"
-          alt="profile-picture"
-        />
-      </section>
-      <section class="profile__about">
-        <h2 class="profile__about__heading">About Me</h2>
-        <p class="profile__about__text">
-          Lorem, fiqh dolor sit amet consectetur adipisicing elit. Earum fuga
-          explicabo doloribus excepturi minus! Impedit ut ipsam tenetur eveniet
-          soluta, nam est aut sapiente vitae, labore quisquam, libero ullam!
-          Aspernatur?
-        </p>
-      </section>
-      <section class="counter">
-        <div class="counter--style">
+      <section class="profile-section">
+        <section class="profile__header">
+          <h2>Eren Jäger</h2>
           <img
-            src="/imgs/questions-counter.png"
-            alt="questions-icon"
-            class="counter__icons"
+            class="profile__picture"
+            src="/imgs/profile-picture.png"
+            alt="profile-picture"
           />
-          <p>12</p>
-        </div>
-        <div class="counter--style">
-          <img
-            src="/imgs/bookmarks-counter.png"
-            alt="bookmarks-icon"
-            class="counter__icons"
-          />
-          <p>4</p>
-        </div>
+        </section>
+        <section class="profile">
+          <section class="profile__about">
+            <h2 class="profile__about__heading">About Me</h2>
+            <p class="profile__about__text">
+              Lorem, fiqh dolor sit amet consectetur adipisicing elit. Earum
+              fuga explicabo doloribus excepturi minus! Impedit ut ipsam tenetur
+              eveniet soluta, nam est aut sapiente vitae, labore quisquam,
+              libero ullam! Aspernatur?
+            </p>
+          </section>
+        </section>
+        <section class="counter">
+          <div class="counter--style">
+            <img
+              src="/imgs/questions-counter.png"
+              alt="questions-icon"
+              class="counter__icons"
+            />
+            <p>12</p>
+          </div>
+          <div class="counter--style">
+            <img
+              src="/imgs/bookmarks-counter.png"
+              alt="bookmarks-icon"
+              class="counter__icons"
+            />
+            <p>4</p>
+          </div>
+        </section>
       </section>
-      <section class="settings">
-        <h2 class="settings__header">Settings</h2>
-        <section class="settings__option">
-          <h4>Dark Mode</h4>
-          <section class="settings__dark-mode-button--off">
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
+      <section class="settings-section">
+        <section class="settings">
+          <h2 class="settings__header">Settings</h2>
+          <section class="settings__option">
+            <h4>Dark Mode</h4>
+            <section class="settings__dark-mode-button--off">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+            </section>
           </section>
         </section>
       </section>
