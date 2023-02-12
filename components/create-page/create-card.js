@@ -13,6 +13,8 @@ const remainingCharactersTags = document.querySelector(
 );
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
+/* The following code is repeating itself and can be shorter through functions. Needs to ask the coaches how in the next session*/
+
 questionInput.addEventListener("input", (event) => {
   let inputValue = event.target.value;
   remainingCharactersQuestion.removeAttribute("hidden");
