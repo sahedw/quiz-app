@@ -1,0 +1,25 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+}
+
+.button {
+  align-self: center;
+  width: 170px;
+}
+
+.form__input--remaining {
+  align-self: flex-end;
+}

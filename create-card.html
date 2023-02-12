@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/components/create-page/create-card.js" defer></script>
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Quiz App</h1>
+    </header>
+    <main data-js="main">
+      <form>
+        <label for=""><h1>Create your own cards!</h1></label>
+        <section class="form__input">
+          <label for="">Your question:</label>
+          <textarea
+            name="question"
+            id="question"
+            cols="30"
+            rows="5"
+            placeholder="Write your question..."
+            maxlength="150"
+            data-js="question"
+          ></textarea>
+          <p
+            class="form__input--remaining"
+            data-js="remaining-characters-question"
+            hidden
+          ></p>
+        </section>
+        <section class="form__input">
+          <label for="">Your answer:</label>
+          <textarea
+            name="answer"
+            id="answer"
+            cols="30"
+            rows="5"
+            placeholder="Write your answer..."
+            maxlength="150"
+            data-js="answer"
+          ></textarea>
+          <p
+            class="form__input--remaining"
+            data-js="remaining-characters-answer"
+            hidden
+          ></p>
+        </section>
+        <section class="form__input">
+          <label for="">Tags:</label>
+          <textarea
+            name="tags"
+            id="tags"
+            cols="25"
+            rows="1"
+            placeholder="Any fitting tags?"
+            maxlength="40"
+            data-js="tags"
+          ></textarea>
+          <p
+            class="form__input--remaining"
+            data-js="remaining-characters-tags"
+            hidden
+          ></p>
+        </section>
+        <section class="form__input">
+          <button class="button" type="submit" data-js="submit-button">
+            Submit your card
+          </button>
+        </section>
+      </form>
+    </main>
+    <footer class="footer">
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li>
+            <a href="/index.html"
+              ><img src="/imgs/home.png" alt="Home Button"
+            /></a>
+          </li>
+          <li>
+            <a href="/bookmark-tagged.html"
+              ><img src="/imgs/bookmark-footer.png" alt="Bookmarks Button"
+            /></a>
+          </li>
+          <li>
+            <a href="/create-card.html"
+              ><img src="/imgs/create-card.png" alt="Create Card Button"
+            /></a>
+          </li>
+          <li>
+            <a href="/personal-profile.html"
+              ><img src="/imgs/user.png" alt="Profile Button"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
