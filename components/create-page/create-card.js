@@ -25,24 +25,6 @@ submitButton.addEventListener("click", (event) => {
   newCard(questionInput, answerInput);
 });
 
-function newCard(qInput, aInput) {
-  const newCard = document.createElement("section");
-  newCard.classList.add("card");
-  main.append(newCard);
-
-  const newCardQuestion = document.createElement("p");
-  newCardQuestion.textContent = qInput.value;
-  newCard.append(newCardQuestion);
-
-  const newCardAnswer = document.createElement("p");
-  newCardAnswer.textContent = aInput.value;
-  newCard.append(newCardAnswer);
-
-  const newCardButton = document.createElement("button");
-  newCardButton.textContent = "Hide Answer";
-  newCard.append(newCardButton);
-}
-
 questionInput.addEventListener("input", (event) => {
   inputCounter(remainingCharactersQuestion, event, 150);
 });
@@ -65,4 +47,27 @@ function inputCounter(remainingCharacters, event, limit) {
   if (inputValue.length > 130) {
     remainingCharacters.style.color = "red";
   } else remainingCharacters.style.color = "black";
+}
+
+function newCard(qInput, aInput) {
+  const newCard = document.createElement("section");
+  newCard.classList.add("card");
+  main.append(newCard);
+
+  const newCardQuestion = document.createElement("p");
+  newCardQuestion.textContent = qInput.value;
+  newCard.append(newCardQuestion);
+
+  const newCardAnswer = document.createElement("p");
+  newCardAnswer.textContent = aInput.value;
+  newCard.append(newCardAnswer);
+
+  const newCardButton = document.createElement("button");
+  newCardButton.textContent = "Hide Answer";
+  newCard.append(newCardButton);
+
+  const newCardBookmark = document.createElement("img");
+  newCardBookmark.classList.add("card__bookmark");
+  newCardBookmark.src = "/imgs/bookmark-untagged.png";
+  newCard.append(newCardBookmark);
 }
