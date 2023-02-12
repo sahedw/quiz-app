@@ -22,10 +22,26 @@ const submitButton = document.querySelector('[data-js="submit-button"]');
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
+  newCard(questionInput, answerInput);
+});
+
+function newCard(qInput, aInput) {
   const newCard = document.createElement("section");
   newCard.classList.add("card");
   main.append(newCard);
-});
+
+  const newCardQuestion = document.createElement("p");
+  newCardQuestion.textContent = qInput.value;
+  newCard.append(newCardQuestion);
+
+  const newCardAnswer = document.createElement("p");
+  newCardAnswer.textContent = aInput.value;
+  newCard.append(newCardAnswer);
+
+  const newCardButton = document.createElement("button");
+  newCardButton.textContent = "Hide Answer";
+  newCard.append(newCardButton);
+}
 
 questionInput.addEventListener("input", (event) => {
   inputCounter(remainingCharactersQuestion, event, 150);
