@@ -22,7 +22,7 @@ const submitButton = document.querySelector('[data-js="submit-button"]');
 
 submitButton.addEventListener("click", (event) => {
   event.preventDefault();
-  newCard(questionInput, answerInput);
+  newCard(questionInput, answerInput, tagsInput);
 });
 
 questionInput.addEventListener("input", (event) => {
@@ -49,7 +49,7 @@ function inputCounter(remainingCharacters, event, limit) {
   } else remainingCharacters.style.color = "black";
 }
 
-function newCard(qInput, aInput) {
+function newCard(qInput, aInput, tInput) {
   const newCard = document.createElement("section");
   newCard.classList.add("card");
   main.append(newCard);
@@ -70,4 +70,12 @@ function newCard(qInput, aInput) {
   newCardBookmark.classList.add("card__bookmark");
   newCardBookmark.src = "/imgs/bookmark-untagged.png";
   newCard.append(newCardBookmark);
+
+  const newCardTagsList = document.createElement("ul");
+  const newCardTags = document.createElement("li");
+  newCardTags.textContent = `#${tInput.value}`;
+  newCardTagsList.classList.add("card__hashtags");
+  newCardTags.classList.add("card__hashtags__items");
+  newCard.append(newCardTagsList);
+  newCardTagsList.append(newCardTags);
 }
