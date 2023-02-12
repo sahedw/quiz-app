@@ -14,6 +14,9 @@ img {
 
 main {
   margin-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {

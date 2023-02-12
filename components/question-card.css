@@ -4,9 +4,10 @@
   justify-content: center;
   align-items: center;
   margin: 50px;
-  height: 400px;
+  height: 320px;
+  width: 80%;
   background-color: chocolate;
-  gap: 80px;
+  gap: 35px;
   position: relative;
 }
 
