@@ -1,3 +1,5 @@
+/* QuerySelectors */
+
 const questionInput = document.querySelector('[data-js="question"]');
 const remainingCharactersQuestion = document.querySelector(
   '[data-js="remaining-characters-question"]'
@@ -13,6 +15,8 @@ const remainingCharactersTags = document.querySelector(
 );
 const submitButton = document.querySelector('[data-js="submit-button"]');
 
+/* Evenlistiners */
+
 questionInput.addEventListener("input", (event) => {
   inputCounter(remainingCharactersQuestion, event, 150);
 });
@@ -24,6 +28,8 @@ answerInput.addEventListener("input", (event) => {
 tagsInput.addEventListener("input", (event) => {
   inputCounter(remainingCharactersTags, event, 40);
 });
+
+/* Functions */
 
 function inputCounter(remainingCharacters, event, limit) {
   let inputValue = event.target.value;
