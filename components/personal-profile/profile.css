@@ -3,12 +3,12 @@
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
   margin: 50px;
 }
 
 .profile__picture {
-  width: 200px;
+  width: 150px;
   border-radius: 130px;
   border: 4px solid bisque;
 }
@@ -26,5 +26,5 @@
 }
 
 .profile__about__text {
-  width: 350px;
+  width: 300px;
 }
