@@ -15,9 +15,25 @@ form {
   gap: 5px;
 }
 
-.button {
+.myButton {
+  box-shadow: inset 0px 39px 0px -24px #e67a73;
+  background-color: #e4685d;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 8px 8px;
+  text-decoration: none;
+  text-shadow: 1px 2px 1px #b23e35;
   align-self: center;
-  width: 170px;
+}
+.myButton:hover {
+  background-color: #eb675e;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
 }
 
 .form__input--remaining {
