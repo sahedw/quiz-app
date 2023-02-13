@@ -6,8 +6,9 @@
   margin: 50px;
   height: 320px;
   width: 80%;
-  background-color: chocolate;
+  background-color: #ef6351;
   gap: 35px;
+  border-radius: 15px;
   position: relative;
 }
 
@@ -27,7 +28,7 @@
 }
 
 .card__hashtags__items {
-  background-color: aliceblue;
+  background-color: #f7a399;
   padding: 5px 10px;
   border-radius: 5px;
 }
