@@ -10,7 +10,7 @@ bookmarkIcon.addEventListener("click", () => {
 answerButton.addEventListener("click", () => {
   answer.classList.toggle("answer--hidden");
 
-  if (answer.classList.value === "hidden") {
+  if (answer.classList.value === "answer--hidden") {
     answerButton.textContent = "Show Answer";
   } else {
     answerButton.textContent = "Hide Answer";
